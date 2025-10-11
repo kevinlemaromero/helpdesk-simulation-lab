@@ -62,13 +62,13 @@
 4. Sign out of user account(local) and Log in as Administrator account
 
 5. To remove local account, navigate to file explorer -> right-click "This PC" -> "Manage" -> "Local User and Groups" -> Users -> right-click on Local Account (User) -> "Delete"
-pic
+![Windows Basic Setup](./screenshots/basic-setup-8.png)
 
-## Windows RSAT Installation (Server Manager)
+## Windows RSAT Installation (Server Manager) and Renaming Computer
 Note: As a helpdesk/IT support, RSAT tools like server manager may not be given due to advanced access
 
-1. Navigate to "add or remove programs" -> "Optional features" -> "Add a feature"
-pic
+1. Navigate to "System" -> Optional features(On Left Panel) -> select "Add a feature"
+![RSAT Installation](./screenshots/rsat-installation.png)
 
 2. Select the following RSAT Tools: 
 - Active Directory Certificate Services Tools
@@ -78,4 +78,29 @@ pic
 - Group Policy Management Tools
 - Remote Desktop Services Tools
 - Server Manager
-pic
+![RSAT Installation](./screenshots/rsat-installation-2.png)
+
+3. To rename Windows Computer, navigate to file explorer -> right-click "This PC" -> Properties -> "Rename This PC"
+![RSAT Installation](./screenshots/rsat-installation-3.png)
+
+## Installing TeamViewer to Windows VM
+
+1. In Windows VM,
+- Navigate to TeamViewer download website and download TeamViewer for Windows
+- Install default setup for TeamViewer
+![TeamViewer Installation](./screenshots/teamviewer-install.png)
+
+## Add Computer to Domain (Connect Windows Client to Windows Server)
+
+1. To create a static IP address, navigate to Control Panel -> select "Network and Internet: View network status and tasks" -> "change adapter settings" -> "Ethernet" -> "Properties" -> select "TCP/IPV4"
+
+2. In TCP/IPV4 properties,
+- select "use the following IP address"
+- Fill in the following IP address and DNS server address credentials
+![Domain Integration](./screenshots/domain-integration.png)
+
+3. Navigate to Devices (Top Panel) -> Network -> Network Settings -> Change Network Adapter to "Host-only Adapter" (This should be done for both Windows VM and Windows Server VM)
+![Domain Integration](./screenshots/domain-integration-2.png)
+
+4. Navigate to File explorer -> right-click "This PC" -> Properties -> "Rename This PC (advanced)" -> Change -> Select "domain", add domain name and enter admin credentials
+![Domain Integration](./screenshots/domain-integration-3.png)

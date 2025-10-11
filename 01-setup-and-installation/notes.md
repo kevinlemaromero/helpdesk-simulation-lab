@@ -39,7 +39,7 @@
 3. Log in to Administrator Account
 ![Installation-Setup](./screenshots/setup-install-8.png)
 
-### Create Static IP address for Lab Environment
+### Create Static IP address (To use Later to join client to this domain)
 
 1. Navigate to Command Prompt(CMD) as Administrator
 ![Static IP Setup](./screenshots/static-ip-setup.png)
