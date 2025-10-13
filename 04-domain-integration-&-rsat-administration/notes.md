@@ -104,3 +104,6 @@ Note: As a helpdesk/IT support, RSAT tools like server manager may not be given 
 
 4. Navigate to File explorer -> right-click "This PC" -> Properties -> "Rename This PC (advanced)" -> Change -> Select "domain", add domain name and enter admin credentials
 ![Domain Integration](./screenshots/domain-integration-3.png)
+
+5. To Confirm domain integration is successful, try logging in with a a User accounted created in the Windows Server Domain (Ex: helpdesk)
+![Domain Integration](./screenshots/domain-integration-4.png)
