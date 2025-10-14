@@ -23,7 +23,7 @@
 - Add downloaded Windows ISO image To Boot up Windows
 ![Windows Setup](./screenshots/windows-setup-2.png)
 
-### Windows Desktop Experience Setup
+## Windows Desktop Experience Setup
 
 1. In Windows Setup,
 - Select with Windows 10 Pro
@@ -49,7 +49,7 @@
 
 - Proceed with default setup
 
-### Administrator Setup
+## Administrator Setup
 1. To enable admin account, navigate to file explorer -> right-click "This PC" -> "Manage" -> "Local User and Groups" -> Users -> right-click on Administrator -> "Properties"
 ![Windows Basic Setup](./screenshots/basic-setup-5.png)
 
