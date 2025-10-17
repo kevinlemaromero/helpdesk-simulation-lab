@@ -1,4 +1,4 @@
-# Windows Remote/ Remote Registry / Remote Desktop / C$
+# Windows Remote/ Remote Registry / Remote Desktop
 
 ## Remote Desktop
 Remote Desktop - Technology that allows a user to access and control a computer or server from a different physical location using a separate device, often called the "client," over a network connection (like a local network or the internet).
@@ -58,5 +58,30 @@ Remote Registry - Lets IT admins view or edit another computer’s registry remo
 ![Remote Registry](./screenshots/remote-registry-3.png)
 
 ## Windows Remote
+Windows Remote - set of tools thats allows you to connect to a remote computer (like a work PC or server) and use it as if you were sitting right in front of it.
 
+C$ - hidden administrative share that allows admins to remotely access a computer’s C: drive for management and support tasks.
 
+### How to setup Windows Remote with a User
+
+1. To enable Windows Remote , in User account (desktop 2)
+- Navigate to Control Panel -> System and Security -> "Launch Remote Assistance" -> "Invite someone to trust to help you" -> "Save this invitation as a file" (recommend: save file on desktop)
+![Windows Remote](./screenshots/windows-remote.png)
+
+2. To use Windows Remote, in Admin account (desktop 1),
+- Navigate to Control Panel -> System and Security -> "Launch Remote Assistance" -> "Help someone who has invited you" -> "Use an invitation file"
+![Windows Remote](./screenshots/windows-remote-2.png)
+
+- In File Explorer, search for path of user desktop (Ex: \\desktop2\c$) -> Users -> select user account(Ex: danny) -> Desktop(or where invitation file was placed) -> open file
+![Windows Remote](./screenshots/windows-remote-3.png)
+
+- Enter invitation password given to user
+![Windows Remote](./screenshots/windows-remote-4.png)
+
+- Notify User to allow you to connect to their computer
+
+3. In Windows Remote you can,
+- Guide User by using the left panel to ask/answer any questions or concerns
+- Request control of user's desktop in order to access their system to better assist them
+![Windows Remote](./screenshots/windows-remote-5.png)
+![Windows Remote](./screenshots/windows-remote-6.png)
