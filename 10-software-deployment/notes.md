@@ -1,10 +1,14 @@
-# Installing PDQ / Deploying PDQ / Software Packages
+# Installing PDQ Deploy / Deploying PDQ / Software Packages
 
 
 ## PDQ
 PDQ - stands for "Pretty Darn Quick", is a pair of Windows systems management tools, PDQ Deploy and PDQ Inventory used by IT professionals to manage and maintain multiple computers remotely.
 
-### Installing PDQ on Windows Server 
+PDQ Deploy - software deployment tool used by IT administrators to remotely install, update, or uninstall software on multiple computers at once — without having to manually visit each one.
+
+Software Packages - Bundle of files and instructions needed to install a program automatically.
+
+### Installing PDQ Deploy on Windows Server 
 
 1. On Windows Server VM, 
 - Navigate to "Devices" tab(on top panel) -> Insert Guest Additions CD image...
@@ -17,7 +21,6 @@ PDQ - stands for "Pretty Darn Quick", is a pair of Windows systems management to
 ![PDQ Installation](./screenshots/pdq-install-3.png)
 
 3. This application allows us to share documents off of the Virtual Machine(from our host copmuter), since our VM's are not using Wifi, therefore cannot install applications on there own
-
 
 4. To Create a Shared folder with our host computer,
 - Navigate to "Shared Folder Settings"(on bottom right panel of VM)
@@ -34,7 +37,7 @@ PDQ - stands for "Pretty Darn Quick", is a pair of Windows systems management to
 ![PDQ Installation](./screenshots/pdq-install-7.png)
 ![PDQ Installation](./screenshots/pdq-install-8.png)
 
-6. To temporarily put Server on the network, On Windows Server:
+6. To temporarily put Server on the network and install PDQ deploy, On Windows Server:
 - refresh file explorer and place it on the desktop
 ![PDQ Installation](./screenshots/pdq-install-9.png)
 
@@ -51,9 +54,6 @@ PDQ - stands for "Pretty Darn Quick", is a pair of Windows systems management to
 ![PDQ Installation](./screenshots/pdq-install-13.png)
 
 ### Deploying PDQ on Windows Server (Installing PDFsam Basic application To the Windows Server using PDQ deploy)
-PDQ Deploy - software deployment tool used by IT administrators to remotely install, update, or uninstall software on multiple computers at once — without having to manually visit each one.
-
-Software Packages - Bundle of files and instructions needed to install a program automatically.
 
 1. Select PDQ Deploy file on your desktop and install Microsoft .NET framework 
 ![PDQ Deploy](./screenshots/pdq-deploy.png)
