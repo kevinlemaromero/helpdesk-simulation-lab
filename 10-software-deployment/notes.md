@@ -61,10 +61,12 @@ Software Packages - Bundle of files and instructions needed to install a program
 2. PDQ Deploy Setup, install default setup and launch PDQ Deploy (the new one, the old on can be recycled or deleted)
 ![PDQ Deploy](./screenshots/pdq-deploy-2.png)
 
-3. To install PDFsam Basic, navigate to Package Library and download PDFsam Basic
+3. In order to launch PDQ Deploy, proceed with free trial version and enter admin credentials in order to launch
+
+4. To install PDFsam Basic, navigate to Package Library and download PDFsam Basic
 ![PDQ Deploy](./screenshots/pdq-deploy-3.png) 
 
-4. To Deploy PDFsam Basic to a machine:
+5. To Deploy PDFsam Basic to a machine:
 - Navigate to "Packages" folder" -> right-click "PDFsam Basic" -> Deploy Once -> select "Choose Target" -> Active Directory -> Computers
 ![PDQ Deploy](./screenshots/pdq-deploy-4.png)
 
@@ -74,7 +76,7 @@ Software Packages - Bundle of files and instructions needed to install a program
 - After the deployment, PDF Basic should appear on Server 2016's Desktop
 ![PDQ Deploy](./screenshots/pdq-deploy-6.png)
 
-5. To take Windows Server back off the network: 
+6. To take Windows Server back off the network: 
 - Navigate to Control Panel -> "View network status and tasks" -> "Change adapter settings" -> right-click Ethernet -> Properties -> Internet Protocol Version 4(TCP/IPv4)
 
 - On TCP/IPv4 Properties, fill original static IP address credentials
@@ -85,3 +87,5 @@ Software Packages - Bundle of files and instructions needed to install a program
 
 - To confirm everything is back its original settings, in CMD ping your domain and you should get replies
 ![PDQ Deploy](./screenshots/pdq-deploy-9.png)
+
+### How to Manually add Computers
