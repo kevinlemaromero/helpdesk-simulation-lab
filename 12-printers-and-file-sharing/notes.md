@@ -1,4 +1,4 @@
-# Printer Set Up On Windows Server 2016 / NTFS / Printer Cloud
+# Printer Set Up On Windows Server 2016 / Printer Cloud
 
 ## Printer Set Up On Windows Server
 
@@ -51,4 +51,28 @@
 
 ### Adding Printer as a User (in Desktop 2)
 
+1. Navigate to Control Panel -> "Hardware and Sound: View devices and printers" -> "Add a printer"
+![Adding a Printer](./screenshots/add-printer.png)
 
+2. In "Add a device", select the printer you want to add to your computer 
+![Adding a Printer](./screenshots/add-printer-2.png)
+
+3. Note: If user is not apart of group that the printer was assigned to, the user will not be able to add it to their computer.
+
+
+## Printer Cloud
+Printer Cloud - is a service that lets you send print jobs to a printer from anywhere, using the internet or a cloud platform.
+
+### Popular Cloud Printing Services and how it works
+
+1. The following are popular cloud printing services: 
+- HP Smart / HP Cloud Printing
+- Epson Connect
+- Canon PRINT Cloud
+- Microsoft Universal Print (for businesses)
+
+2. How cloud printing services work:
+- Printer connects to the internet (via Wi-Fi or Ethernet).
+- You log into the printer manufacturer’s cloud account.
+- Your device uploads the document securely.
+- The cloud service sends it to your printer.
