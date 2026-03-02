@@ -1,18 +1,22 @@
 # Domain Integration & RSAT Administration
 
+Domain Integration - Process of "connecting" a device or service to a central domain.
+
+Remote Server Administration Tools(RSAT) Administration - Collection of Microsoft utilities that lets IT administrators manage Windows Server roles (like Active Directory, DNS, and DHCP) directly from their local Windows 10 or 11 workstation.
+
 ## Windows Installation
 
 1. Navigate to Window 10 website and download Windows ISO
 ![Windows Installation](./screenshots/windows-installation.png)
 
-2. In Windows 10 setup,
+2. Once downloaded, select Windows ISO and do the following:
 - Select "Create installation media for another PC"
-- Select "ISO file" and save Windows ISO file in file explorer
-- Finish Setup
 ![Windows Installation](./screenshots/windows-installation-2.png)
+- Select "ISO file" and save Windows ISO file in file explorer
 ![Windows Installation](./screenshots/windows-installation-3.png)
+- Finish Setup
 
-## Windows Virtual Machine Setup
+## Virtual Machine Setup for Windows 10(Helpdesk)
 
 1. Open VirtualBox
 - Create new Virtual Machine
@@ -49,8 +53,8 @@
 
 - Proceed with default setup
 
-## Administrator Setup
-1. To enable admin account, navigate to file explorer -> right-click "This PC" -> "Manage" -> "Local User and Groups" -> Users -> right-click on Administrator -> "Properties"
+## Administrator Setup in Windows 10 VM
+1. To enable an admin account, navigate to file explorer -> right-click "This PC" -> "Manage" -> System Tools -> "Local User and Groups" -> Users -> right-click on Administrator -> "Properties"
 ![Windows Basic Setup](./screenshots/basic-setup-5.png)
 
 2. In Administrator Properties, select "Password never expires" and click "OK"
@@ -61,10 +65,10 @@
 
 4. Sign out of user account(local) and Log in as Administrator account
 
-5. To remove local account, navigate to file explorer -> right-click "This PC" -> "Manage" -> "Local User and Groups" -> Users -> right-click on Local Account (User) -> "Delete"
+5. In the Admin account to remove local account, navigate to file explorer -> right-click "This PC" -> "Manage" -> System Tools -> "Local User and Groups" -> Users -> right-click on Local Account (User) -> "Delete"
 ![Windows Basic Setup](./screenshots/basic-setup-8.png)
 
-## Windows RSAT Installation (Server Manager) and Renaming Computer
+## Windows RSAT Installation (Server Manager) and Renaming Computer(Desktop 1)
 Note: As a helpdesk/IT support, RSAT tools like server manager may not be given due to advanced access
 
 1. Navigate to "System" -> Optional features(On Left Panel) -> select "Add a feature"
@@ -90,20 +94,21 @@ Note: As a helpdesk/IT support, RSAT tools like server manager may not be given 
 - Install default setup for TeamViewer
 ![TeamViewer Installation](./screenshots/teamviewer-install.png)
 
-## Add Computer to Domain (Connect Windows Client to Windows Server)
+## Add Computer to Domain (Connect Desktop 1 to Windows 10 Server)
 
-1. To create a static IP address, navigate to Control Panel -> select "Network and Internet: View network status and tasks" -> "change adapter settings" -> "Ethernet" -> "Properties" -> select "TCP/IPV4"
+1. To create a static IP address in order to connect to this machine to the domain, 
+- navigate to Control Panel -> select "Network and Internet: View network status and tasks" -> "change adapter settings" -> "Ethernet" -> "Properties" -> select "TCP/IPV4"
 
 2. In TCP/IPV4 properties,
 - select "use the following IP address"
 - Fill in the following IP address and DNS server address credentials
 ![Domain Integration](./screenshots/domain-integration.png)
 
-3. Navigate to Devices (Top Panel) -> Network -> Network Settings -> Change Network Adapter to "Host-only Adapter" (This should be done for both Windows VM and Windows Server VM)
+3. Navigate to Devices (Top Panel) -> Network -> Network Settings -> Change Network Adapter to "Host-only Adapter" (This should be done for both Windows 10 VM and Windows Server VM)
 ![Domain Integration](./screenshots/domain-integration-2.png)
 
-4. Navigate to File explorer -> right-click "This PC" -> Properties -> "Rename This PC (advanced)" -> Change -> Select "domain", add domain name and enter admin credentials
+4. Navigate to File explorer -> right-click "This PC" -> Properties -> "Rename This PC (advanced)" -> select "Change" -> Select "domain", add domain name and enter admin credentials
 ![Domain Integration](./screenshots/domain-integration-3.png)
 
-5. To Confirm domain integration is successful, try logging in with a a User accounted created in the Windows Server Domain (Ex: helpdesk)
+5. To Confirm domain integration is successful, try logging in with a User accounted created in the Windows Server Domain (Ex: helpdesk)
 ![Domain Integration](./screenshots/domain-integration-4.png)
