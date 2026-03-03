@@ -8,7 +8,7 @@
 
 ![AD Troubleshoot](./screenshots/ad-troubleshoot.png)
 
-- Solution (Admin): navigate to Server Manager -> Tools -> Active Directory User and Computers -> right-click domain (Ex: lab.local) -> "Find..." -> Select User account -> Account -> Select "Unlock account"
+- Solution (Admin): navigate to Server Manager -> Tools -> Active Directory User and Computers -> right-click domain (Ex: lab.local) -> "Find..." -> select User account -> select "Account" Tab -> select "Unlock account"
 
 ![AD Troubleshoot](./screenshots/ad-troubleshoot-2.png)
 
