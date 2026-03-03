@@ -54,6 +54,5 @@
 ![Static IP Setup](./screenshots/static-ip-setup-3.png)
 
 4. In TCP/IPV4 properties,
-- select "use the following IP address"
-- Fill in the following IP address and DNS server address credentials
+- select "use the following IP address", fill in the following IP address and DNS server address credentials
 ![Static IP Setup](./screenshots/static-ip-setup-4.png)
