@@ -31,9 +31,11 @@ Remote Server Administration Tools(RSAT) Administration - Collection of Microsof
 
 1. In Windows Setup,
 - Select with Windows 10 Pro
+
 ![Windows Setup](./screenshots/windows-setup-3.png)
 
 - Select "Custom Install Windows only"
+
 ![Windows Setup](./screenshots/windows-setup-4.png)
 
 - Proceed With Default Setup
