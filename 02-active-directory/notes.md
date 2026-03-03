@@ -5,9 +5,9 @@
 
 1. Navigate to File Explorer on taskbar -> Right-click "This PC" -> Select Properties
 ![Rename Server](./screenshots/rename-server-3.png)
-![Rename Server](./screenshots/rename-server.png)
 
 2. In "Computer name, domain, and workgroup settings", select "Change Settings" -> select "Change"
+![Rename Server](./screenshots/rename-server.png)
 
 3. Change Computer name and click "OK", the system will restart shortly after
 ![Rename Server](./screenshots/rename-server-2.png)
