@@ -37,17 +37,21 @@
 ## Troubleshooting CMD commmands
 
 1. ping- tool used to test if one computer can reach another over a network or the internet. (Ex: Desktop User pings Server IP address/host name)
+
 ![CMD Troubleshoot Commands](./screenshots/cmd-troubleshoot.png)
 
 2. ipconfig - tells you which IP addresses, gateways, and network info your machine is using.
+
 ![CMD Troubleshoot Commands](./screenshots/cmd-troubleshoot-2.png)
 
 3. /h or /help - display all the available options and switches you can use with that command before it.
+
 ![CMD Troubleshoot Commands](./screenshots/cmd-troubleshoot-3.png)
 
 4. gpupdate - Group Policy Update, forces your computer to apply the latest Group Policy settings from the domain or local machine.
 
 5. net user(Admin) - tool to view, create, or modify user accounts on a local computer or in a domain (like, password expiration).
+
 ![CMD Troubleshoot Commands](./screenshots/cmd-troubleshoot-4.png)
 
 
