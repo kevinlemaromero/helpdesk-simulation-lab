@@ -28,7 +28,7 @@ Note: I
 - Security Group - Gives access to resources, like files, folders, applications, or emails.
 - Distribution Group - Used to only send emails to a group of people.
 
-1. Navigate to Server Manager -> Tools -> Active Directory Users and Computers -> Domain(Ex: lab.local) -> right-click "Users -> New -> Group
+1. Navigate to Server Manager -> Tools -> Active Directory Users and Computers -> Domain(Ex: lab.local) -> right-click "Users" -> New -> Group
 
 ![Security Group Creation](./screenshots/security-group-creation.png)
 
@@ -38,11 +38,11 @@ Note: I
 
 ![Security Group Creation](./screenshots/security-group-creation-2.png)
 
-### Add Users to Security Groups
+### Add Users to Security Groups  
 
 1. Navigate to "Active Directory Users and Computers" -> Domain(Ex: lab.local) -> Users -> select Security Group (Ex: "HR") -> "Members" tab -> Add -> find and add desired user (Ex: danny)
-![Add User To Security Group](./screenshots/add-security-group.png) 
 
+![Add User To Security Group](./screenshots/add-security-group.png) 
 
 2. To confirm what Security groups a user is apart of, select User -> "Member of" tab
 
@@ -51,17 +51,17 @@ Note: I
 ### Folder Permissioning
 Folder Permissioning- process of setting rules that define who can access a folder and its contents, and what actions they are allowed to perform (like viewing, editing, or deleting files).
 
-1. Right-click Shared Folder(Ex: Personal) -> Properties -> "Security" tab -> Advanced -> select "Disable Inheritance" -> select "Convert inherited permissions into explicit permissions"
+1. Navigate to File Explorer -> "This PC" -> Local Disk -> Shares -> right-click Shared Folder(Ex: Personal) -> Properties -> "Security" tab -> Advanced -> select "Disable Inheritance" -> select "Convert inherited permissions into explicit permissions" (Keeps everyone who currently has access, but lets you edit the list manually.)
 
 ![Folder Permissioning](./screenshots/folder-permissioning.png)
 
 2. In "Advanced Security Settings",
-- Select "Remove" to get rid of unneccessary Users 
+- Select "Remove" if you need to get rid of unneccessary Users 
 - Select "Add" -> "Select a Principal", to give user permission (Ex: helpdesk)
 
 ![Folder Permissioning](./screenshots/folder-permissioning-2.png)
 
-3. To give security group read/write permissions, navigate to Shared Folder(Ex: Personal) -> right-click Folder -> select Properties -> "Sharing" tab -> "Share" -> Give Security Group Permission (Read/Write)
+3. To give user read/write permissions, navigate to Shared Folder(Ex: Personal) -> right-click Folder -> select Properties -> "Sharing" tab -> "Share" -> Give User Permission (Read/Write)
 
 ![Folder Permissioning](./screenshots/folder-permissioning-3.png)
 
@@ -76,13 +76,16 @@ Map Drives - shortcut created on a computer that points to a shared folder on an
 
 ![Mapped Drive w/ User account](./screenshots/map-drive-with-user-account-2.png)
 
-2. Navigate to "File Explorer", find network drive path to the shared folder (Ex: "hr" folder) and copy it (network drive path can be found in Shared Folder properties in Windows Server)
+2. In the Windows Server 2016(admin),
+
+- Navigate to File Explorer -> "This PC" -> Local Disk -> Shares -> right-click Shared Folder(Ex: HR) -> Properties -> "Sharing" tab, find network drive path to the shared folder (Ex: "hr" folder) and copy it 
 
 ![Mapped Drive w/ User account](./screenshots/map-drive-with-user-account-3.png)
 
 ![Mapped Drive w/ User account](./screenshots/map-drive-with-user-account-4.png)
 
-3. Right-click "This PC" -> "Map network drive" -> paste network path into "Folder" section
+3. In Desktop 2(User),
+Right-click "This PC" -> "Map network drive" -> paste network path into "Folder" section
 
 ![Mapped Drive w/ User account](./screenshots/map-drive-with-user-account-5.png)
 
@@ -90,7 +93,7 @@ Map Drives - shortcut created on a computer that points to a shared folder on an
 
 ![Mapped Drive w/ User account](./screenshots/map-drive-with-user-account-6.png)
 
-### Mapping Drive with Admin account in Windows Server
+### Mapping Drive of User with Admin account in Windows Server
 
 1. Log into Administrator account in Windows Server
 
@@ -98,7 +101,7 @@ Map Drives - shortcut created on a computer that points to a shared folder on an
 
 ![Mapped Drive w/ Admin account](./screenshots/map-drive-with-admin-account.png)
 
-3. In User properties -> "Profile" tab, 
+3. Navigate to User properties -> "Profile" tab, 
 - In "Home folder", select "Connect" and enter "domain\shared folder\%username%" (Ex: "\\Server2016\Personal\%username%")
 
 ![Mapped Drive w/ Admin account](./screenshots/map-drive-with-admin-account-2.png)
