@@ -22,3 +22,33 @@ Ticket System Levels - also called support tiers or helpdesk levels, define how 
 
 ![Jira Launch](./screenshots/jira-launch-3.png)
 
+### How to Create/Close a ticket
+
+1. To create a ticket do the following,
+
+- Click on "Create" on the top panel
+
+- fill in Summary, Components, Description, Assignee, Priority and create ticket.
+
+![Ticket Process](./screenshots/ticket-process.png)
+
+- The newly created ticket should look similar to this.
+
+![Ticket Process](./screenshots/ticket-process-2.png)
+
+2. To close a ticket when completed do the following
+
+- select "Open" on top right of ticket
+
+- select "Mark as Done", fill in Resolution and apply proper notes to the client of the progress of the ticket.
+
+![Ticket Process](./screenshots/ticket-process-3.png)
+
+- The closed ticket should look similar to this.
+
+![Ticket Process](./screenshots/ticket-process-4.png)
+
+
+
+
+
