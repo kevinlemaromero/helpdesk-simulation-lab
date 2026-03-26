@@ -6,7 +6,7 @@ Issue Type: Calendar Outlook Access
 
 ## Ticket Description
 
-[Ticket](./screenshots/ticket-001.png)
+![Ticket](./screenshots/ticket-001.png)
 
 ## Steps Performed 
 
@@ -14,12 +14,12 @@ Issue Type: Calendar Outlook Access
 
 2. Open Outlook, navigate to File(top left) -> Info -> Delegate Settings 
 
-[Solution](./screenshots/ticket-001-solution.png)
+![Solution](./screenshots/ticket-001-solution.png)
 
 3. In Account Settings, select "Add" -> Search new Assistent and click "OK"
 
-[Solution](./screenshots/ticket-001-solution-2.png)
+![Solution](./screenshots/ticket-001-solution-2.png)
 
 4. In Delegate Permissions, give Calendar and Contacts Editor access to the new assistent 
 
-[Solution](./screenshots/ticket-001-solution-3.png)
+![Solution](./screenshots/ticket-001-solution-3.png)
