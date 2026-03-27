@@ -1,7 +1,9 @@
 # Ticket 002 – File Restore
 
 Department: Engineer
+
 Priority: Low
+
 Issue Type: Microsoft Word File Restore
 
 ## Ticket Description

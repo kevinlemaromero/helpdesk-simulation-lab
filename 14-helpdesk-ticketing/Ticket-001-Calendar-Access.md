@@ -1,7 +1,9 @@
 # Ticket 001 – Calendar Access
 
 Department:Human Resources
+
 Priority: Low
+
 Issue Type: Calendar Outlook Access
 
 ## Ticket Description

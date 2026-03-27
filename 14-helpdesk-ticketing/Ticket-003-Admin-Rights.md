@@ -1,7 +1,9 @@
 # Ticket 003 – Admin Rights 
 
 Department: Software Developer
+
 Priority: Low
+
 Issue Type: Admin Rights on Local PC (Computer Management)
 
 ## Ticket Description
