@@ -4,7 +4,7 @@ Department: Human Resources
 
 Priority: Low
 
-Issue Type: 
+Issue Type: Setup the PC for a New Hire employee
 
 ## Ticket Description
 
@@ -32,9 +32,15 @@ Issue Type:
 
 ![Troubleshoot](./screenshots/ticket-005-troubleshoot-5.png)
 
-4. Add the user to a specific distribution group as member in Active Directory 
+4. Add the user to a specific distribution group as member in Active Directory(in this case it would be adding Jennifer to the HR distribution group)
 
-5. Mapped a network drive of the user to their designated department
+![Troubleshoot](./screenshots/ticket-005-troubleshoot-6.png)
+
+5. Create a Folder for department on local disk and Map the network drive of the user to their designated department
+
+![Troubleshoot](./screenshots/ticket-005-troubleshoot-7.png)
+
+![Troubleshoot](./screenshots/ticket-005-troubleshoot-8.png)
 
 6. Create a mailbox of the user
 
